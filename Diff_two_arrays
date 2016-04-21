@@ -1,0 +1,19 @@
+function diffArray(arr1, arr2) {
+  var newArr = [];
+  // Same, same; but different.
+  for(i=0;i<arr1.length;i++)
+    {
+      for(j=0;j<arr2.length;j++)
+        if(arr1[i] === arr2[j]){break;}
+      if(j == arr2.length){newArr.push(arr1[i]);}
+    }
+   for(i=0;i<arr2.length;i++)
+    {
+      for(j=0;j<arr1.length;j++)
+        if(arr1[j] === arr2[i]){break;}
+      if(j == arr1.length){newArr.push(arr2[i]);}
+    }
+  return newArr;
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
