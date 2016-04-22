@@ -1,0 +1,21 @@
+function translatePigLatin(str) {
+  var c;
+  var vowels=['a','e','i','o','u'];
+  var ind;
+  //console.log(ind);
+  for(i=0;i<str.length;i++)
+  {
+    ind=vowels.indexOf(str[i]);
+    if(ind!=-1){break;}
+  }
+  if(i=== 0){str+="way";}
+  else{s=str.slice(i);
+       for(j=0;j<i;j++)
+         s+=(str[j]);
+       s+=("ay");str=s;
+     }
+ 
+  return str;
+}
+
+translatePigLatin("glove");
