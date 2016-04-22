@@ -1,0 +1,20 @@
+function fearNotLetter(str) {
+  var c=str.charCodeAt(0);
+  var b;
+  var ne='';
+  for(i=1;i<str.length;i++)
+    {
+      b=str.charCodeAt(i);
+      console.log("Value of b:"+b+"c:"+c);
+      if(b-c>1){
+        for(j=1;j<b-c;j++)
+          ne+=(String.fromCharCode(c+j));
+      }
+      c=b;
+    }
+  console.log(ne);
+  if(ne===''){return undefined;}
+  else{return ne;}
+}
+
+fearNotLetter("abceh");
