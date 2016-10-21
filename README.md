@@ -1,3 +1,2 @@
 # Basic_Algorithm_JS
-Basic Algorithm Scripting questions in FCC. Will work on bigger algorithms soon
-Credits:FCC
+Algorithmic Questions using Javascript from FreeCode Camp Basic, intermediate and Advanced Algorithmic Scripting.  
